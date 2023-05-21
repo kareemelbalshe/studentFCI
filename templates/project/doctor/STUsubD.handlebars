@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor</title>
+    <link rel="stylesheet" href="../../../css/login.css" />
+    <link rel="stylesheet" href="../../../css/student.css" />
+    <link rel="stylesheet" href="../../../css/all.min.css" />
+    <link rel="stylesheet" href="../../../css/normalize.css" />
+    <link rel="icon" href="../../../Untitled-1 (2).icon">
+    <style>
+        input{
+            width: 90%;
+            background-color: #eee;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="student" id="height">
+      <div class="info">
+        <div class="icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="">
+          <p>Name: <span>D/</span></p>
+          <p>Age: <span>50</span></p>
+          <p>Fuclty: <span>MU</span></p>
+          <p>College: <span>FCI</span></p>
+          <p>Address: <span>Birket El-Sab`, Al Minufiyah, Egypt</span></p>
+          <p>National ID: <span>3000000000000</span></p>
+          <p>Phone Num: <span>0123456789</span></p>
+          <p>Gender: <span>male</span></p>
+        </div>
+      </div>
+      <div class="come">
+        <form action="">
+            <input class="search" name="search" placeholder="Search" type="search" style="background-color: white;">
+            <br>
+            <a style="margin: 20px 0 0 0; background-color: #1A5F7A;color: white;display: inline-block;padding: 10px;border-radius: 999px;" href="addMatrial.html">Add Matrial</a>
+        <table>
+            <thead>
+              <tr>
+                <td>Acadmic ID</td>
+                <td>Name</td>
+                <td>Activity</td>
+                <td>Final</td>
+                <td>Degree</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>200000</td>
+                <td>student</td>
+                <td><input type="text" name="a" placeholder="Activity"></td>
+                <td><input type="text" name="f" placeholder="Final"></td>
+                <td><input type="text" name="d" placeholder="Degree"></td>
+              </tr>
+            </tbody>
+        </table>
+        <input type="submit" style="width: 20%; height: 40px; border-radius: 9999px;">
+    </form>
+      </div>
+      <div class="chose">
+        <ul>
+          <li><a href="../../doctor.html">Subjects</a></li>
+          <li><a href="avilabalSUBd.html">Available subjects</a></li>
+        </ul>
+      </div>
+      <button
+        style="
+          z-index: 9999;
+          position: fixed;
+          background-color: white;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          right: 50px;
+          bottom: 50px;
+          display: flex;
+          transition: 0.5s all ease;
+          align-items: center;
+          justify-content: center;
+        "
+        onclick="topFunction()"
+        id="myBtn"
+        title="Go to top"
+      >
+        <i style="font-size: 25px" class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="../../../js/style.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.student{
+    display: flex;
+    height: 100vh;
+}
+.info {
+    flex: 2;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info .icon{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.info .icon i {
+    font-size: 90px;
+}
+.info p{
+    margin: 8px auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    width: 80%;
+
+}
+.info span{
+    color: green;
+    font-weight: bold;
+}
+.come{
+    flex: 4;
+}
+.chose{
+    flex: 2;
+    background-color: #1A5F7A;
+}
+.chose ul{
+    margin-top: 50px;
+}
+.chose li{
+    margin: 50px;
+}
+.chose li a{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 55px;
+    border-bottom: 1px solid white;
+}
+.chose li a:hover{
+    background-color: white;
+    color: #333;
+    transition: 0.3s ease-in;
+}

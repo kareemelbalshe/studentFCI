@@ -1,0 +1,113 @@
+.admin{
+    display: flex;
+    height: 100vh;
+}
+.org{
+    flex: 4;
+}
+.org ul{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    height: 80%;
+}
+.org li{
+    margin: auto;
+    width: 40%;
+    height: 40%;
+}
+.org li a{
+    background-color: #1A5F7A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+}
+.chose{
+    flex: 1;
+}
+table{
+    width: 95%;
+    margin: 30px auto;
+}
+table thead{
+    border-radius: 10px;
+    background-color: #1A5F7A;
+}
+table thead td{
+    padding: 5px 10px;
+    color: white;
+}
+table thead td:first-child{
+    border-top-left-radius: 10px;
+}
+table thead td:last-child{
+    border-top-right-radius: 10px;
+}
+table tbody{
+    background-color: #eee;
+}
+table tbody td{
+    padding: 4px;
+}
+table a{
+    background-color: #1A5F7A;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 999px;
+    display: inline-block;
+}
+.search{
+    border: 2px solid #1A5F7A;
+    height: 50px;
+    border-radius: 9999px;
+    width: 400px;
+    margin-top: 50px;
+}
+table button{
+    font-size: 16px;
+    border: 1px solid #1A5F7A;
+    border-radius: 999px;
+    padding: 0 3px;
+}
+table p{
+    color: green;
+    font-weight: bold;
+}
+.form{
+    background-color: #1A5F7A;
+    height: calc(100vh - 100px);
+    display: flex;
+    margin:50px 100px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form form input{
+    margin: 10px;
+    height: 50px;
+    width: 500px;
+    font-size: 25px;
+    border-radius: 999px;
+}
+.form form input:last-child{
+    width: 300px;
+}
+.st form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.st form input{
+    width: 400px;
+}

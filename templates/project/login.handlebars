@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>college System</title>
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="icon" href="../../Untitled-1 (2).icon">
+  </head>
+  <body>
+    <section class="login">
+      <div class="support"><a href="login/support">Support</a></div>
+      <div class="compo">
+        <form action="/login/{{loginuser._id}}" method="post" id="loginForm">
+          <div class="" style="display: flex; flex-direction: column">
+            <input
+              type="text"
+              id="email"
+              required
+              placeholder="Email"
+              name="email"
+            />
+            <input
+              type="password"
+              maxlength="15"
+              minlength="8"
+              placeholder="Passward"
+              id="pass"
+              name="pass"
+              required
+            />
+          </div>
+          <div class="kind">
+            <input
+              type="radio"
+              value="student"
+              id="student"
+              name="kind"
+              checked
+            />
+            <label for="student">Student</label>
+            <input type="radio" value="doctor" id="doctor" name="kind" />
+            <label for="doctor">Doctor</label>
+            <input type="radio" value="admin" id="admin" name="kind" />
+            <label for="admin">Admin</label>
+          </div>
+          <div class="btn">
+            <input type="submit" value="Submit" id="loginS"/>
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+      <div class="about"><a href="login/about">About</a></div>
+    </section>
+    {{!-- <script src="../../js/main.js"></script> --}}
+  </body>
+</html>

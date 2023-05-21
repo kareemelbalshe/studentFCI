@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 9999px;
+    text-align: center;
+    color: #333;
+    transition: 0.5s all ease;
+}
+body{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+button{
+    height: 50px;
+    width: 90px;
+}
+.login{
+    background-color: #1A5F7A;
+    width: 85%;
+    height: calc(100vh - 100px);
+    display: flex;
+    margin:50px auto;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login form input{
+    margin: 10px;
+    height: 50px;
+    width: 500px;
+    font-size: 25px;
+}
+.login form .btn input{
+    width: 210px;
+    background-color: white;
+}
+.support{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.support a{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.about a{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login form .kind{
+    background-color: white;
+    width: 450px;
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login form .kind input{
+    width: 20px;
+    height: 20px;
+    margin: 20px 5px 20px 20px;
+}
