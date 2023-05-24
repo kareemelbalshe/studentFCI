@@ -19,71 +19,35 @@
         <table>
             <thead>
               <tr>
-                <td>Level 1</td>
-                <td>Level 2</td>
-                <td>Level 3</td>
-                <td>Level 4</td>
+                <td>ID</td>
+                <td>Name</td> 
+                <td>Department</td>
+                <td>Level</td>
+                <td>doctor</td>
+                <td>Hide</td>
               </tr>
             </thead>
             <tbody>
+              {{#each allsubjects}}
               <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
+                <td><p>{{ID}}</p></td>
+                <td><a href="STUsubj">{{name}}</a></td> 
+                <td><p>{{Department}}</p></td>
+                <td><p>{{Level}}</p></td>
+                <td><P>{{doctor}}</P></td>
+                <td><button>Hide</button></td>
               </tr>
-              <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-              </tr>
-              <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-              </tr>
-              <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-              </tr>
-              <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-              </tr>
-              <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-              </tr>
-              <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-              </tr>
-              <tr>
-                <td><p>ID</p> <a href="STUsubj.html">sub1</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub2</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub3</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-                <td><p>ID</p> <a href="STUsubj.html">sub4</a> <p>depart</p> <P>Doctor</P> <button>Delete</button></td>
-              </tr>
+              {{/each}}
             </tbody>
         </table>
     </div>
       <div class="chose">
         <ul>
-          <li><a href="../../admin.html">Add</a></li>
-          <li><a href="allsubjects.html">Subjects</a></li>
-          <li><a href="allStudents.html">Students</a></li>
-          <li><a href="alldoctors.html">Doctors</a></li>
-          <li><a href="setting.html">Setting</a></li>
+          <li><a href="../admin">Add</a></li>
+          <li><a href="allsubjects">Subjects</a></li>
+          <li><a href="allStudents">Students</a></li>
+          <li><a href="alldoctors">Doctors</a></li>
+          <li><a href="setting">Setting</a></li>
         </ul>
       </div>
       <button

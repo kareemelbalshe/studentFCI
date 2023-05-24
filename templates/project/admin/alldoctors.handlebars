@@ -19,6 +19,7 @@
             <thead>
               <tr>
                 <td>Name</td>
+                <td>Department</td>
                 <td>Age</td>
                 <td>Fuclty</td>
                 <td>College</td>
@@ -31,28 +32,31 @@
               </tr>
             </thead>
             <tbody>
+              {{#each alldoctors}}
               <tr>
-                <td>D\</td>
-                <td>50</td>
-                <td>MU</td>
-                <td>FCI</td>
-                <td>Birket El-Sab`, Al Minufiyah, Egypt</td>
-                <td>3000000000000</td>
-                <td>0123456789</td>
-                <td>mail</td>
+                <td>{{Name}}</td>
+                <td>{{Department}}</td>
+                <td>{{Age}}</td>
+                <td>{{Fuclty}}</td>
+                <td>{{College}}</td>
+                <td>{{Address}}</td>
+                <td>{{National}}</td>
+                <td>{{Phone}}</td>
+                <td>{{Gender}}</td>
                 <td><button>Update</button></td>
                 <td><button>Delete</button></td>
               </tr>
+              {{/each}}
             </tbody>
         </table>
     </div>
       <div class="chose">
         <ul>
-          <li><a href="../../admin.html">Add</a></li>
-          <li><a href="allsubjects.html">Subjects</a></li>
-          <li><a href="allStudents.html">Students</a></li>
-          <li><a href="alldoctors.html">Doctors</a></li>
-          <li><a href="setting.html">Setting</a></li>
+          <li><a href="../admin">Add</a></li>
+          <li><a href="allsubjects">Subjects</a></li>
+          <li><a href="allStudents">Students</a></li>
+          <li><a href="alldoctors">Doctors</a></li>
+          <li><a href="setting">Setting</a></li>
         </ul>
       </div>
       <button

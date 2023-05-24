@@ -5,6 +5,7 @@ import mongoose from "mongoose"
 import dotenv from 'dotenv'
 dotenv.config()
 import routerlogin from './routes/login.js'
+import routeuser from './routes/user.js'
 
 
 
@@ -23,15 +24,9 @@ app.use(express.static("./public"))
 
 app.use('/login', routerlogin)
 
-// app.use('/admin/:_id',(req,res)=>{
-//     res.render('project/admin', { layout: false })
-// })
-// app.use('/doctor/:_id',(req,res)=>{
-//     res.render('project/doctor', { layout: false })
-// })
-// app.use('/student/:_id',(req,res)=>{
-//     res.render('project/student', { layout: false })
-// })
+app.use('/user',routeuser)
+
+
 
 
 app.listen(process.env.port, () => {

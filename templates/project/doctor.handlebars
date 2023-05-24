@@ -18,46 +18,43 @@
           <i class="fa-solid fa-user"></i>
         </div>
         <div class="">
-          <p>Name: <span>D/</span></p>
-          <p>Age: <span>50</span></p>
-          <p>Fuclty: <span>MU</span></p>
-          <p>College: <span>FCI</span></p>
-          <p>Address: <span>Birket El-Sab`, Al Minufiyah, Egypt</span></p>
-          <p>National ID: <span>3000000000000</span></p>
-          <p>Phone Num: <span>0123456789</span></p>
-          <p>Gender: <span>male</span></p>
+          <p>Name: <span>{{doc.Name}}</span></p>
+          <p>Age: <span>{{doc.Age}}</span></p>
+          <p>Fuclty: <span>{{doc.Fuclty}}</span></p>
+          <p>College: <span>{{doc.College}}</span></p>
+          <p>Address: <span>{{doc.Address}}</span></p>
+          <p>National ID: <span>{{doc.National}}</span></p>
+          <p>Phone Num: <span>{{doc.Phone}}</span></p>
+          <p>Gender: <span>{{doc.Gender}}</span></p>
         </div>
       </div>
       <div class="come"> 
         <table>
         <thead>
-          <tr>
-            <td>Level 1</td>
-            <td>Level 2</td>
-            <td>Level 3</td>
-            <td>Level 4</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub1</a> <p>depart</p></td>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub2</a> <p>depart</p></td>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub3</a> <p>depart</p></td>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub4</a> <p>depart</p></td>
-          </tr>
-          <tr>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub1</a> <p>depart</p></td>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub2</a> <p>depart</p></td>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub3</a> <p>depart</p></td>
-            <td><p>ID</p> <a href="branshPages/doctor/STUsubD.html">sub4</a> <p>depart</p></td>
-          </tr>
-        </tbody>
+              <tr>
+                <td>ID</td>
+                <td>Name</td> 
+                <td>Department</td>
+                <td>Level</td>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each allsubjects}}
+              <tr>
+                <td><p>{{ID}}</p></td>
+                <td><a href="/user/doctor/STUsubD">{{name}}</a></td> 
+                <td><p>{{Department}}</p></td>
+                <td><p>{{Level}}</p></td>
+              </tr>
+              {{/each}}
+            </tbody>
     </table>
   </div>
       <div class="chose">
         <ul>
-          <li><a href="doctor.html">Subjects</a></li>
-          <li><a href="branshPages/doctor/avilabalSUBd.html">Available subjects</a></li>
+          <li><a href="doctor">Subjects</a></li>
+          <li><a href="doctor/avilabalSUBd">Available subjects</a></li>
+          <li><a href="../login">Log out</a></li>
         </ul>
       </div>
       <button
