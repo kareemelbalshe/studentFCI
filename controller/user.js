@@ -176,18 +176,6 @@ export const addMatrialpost =async (req, res) => {
     const MongoClient = require('mongodb').MongoClient;
     const fs = require('fs');
     const pdff=fs.readFileSync(pdf)
-    MongoClient.connect(process.env.mongo, function(err, client) {
-        if(err) throw err;
-      
-        const db = client.db(MongoClient);
-      
-        const collection = db.collection(pdf);
-      
-        collection.insertOne(pdfDocument, function(err, result) {
-          if(err) throw err;
-      
-          console.log('PDF file uploaded successfully');
-          client.close();})})
     await pdfs.create({
         nameOfSheet,
         pdf:pdff
